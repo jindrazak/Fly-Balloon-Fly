@@ -1,6 +1,6 @@
 {
-  "name": "mi-aph-materials",
-  "author": "Adam Vesecky",
+  "name": "fly-balloon-fly",
+  "author": "Jindrich Zak",
   "scripts": {
     "start": "node scripts/deploy.js && tsc --noEmit && parcel templates/*.html templates/*.pug --out-dir build",
     "clean": "node scripts/clean.js",

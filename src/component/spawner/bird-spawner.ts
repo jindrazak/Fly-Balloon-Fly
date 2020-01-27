@@ -18,7 +18,7 @@ export class BirdSpawner extends Spawner {
       .withParent(this.scene.stage)
       .withTag(Tags.REMOVE_ON_GAME_START)
       .withFlag(Flags.COLLIDABLE)
-      .withComponent(new MovingItemComponent(randomNormalDistribution() * 500))
+      .withComponent(new MovingItemComponent(randomNormalDistribution() * 500, 30))
       .build();
     this.sendMessage(Messages.BIRD_SPAWNED);
   }

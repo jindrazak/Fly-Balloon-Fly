@@ -35,7 +35,7 @@ export enum Texts {
   CONTROLS = 'Controls: arrow up',
   PRESS_ENTER_TO_START = 'Press ENTER to start',
   MADE_BY = 'Made by Jindra Zak',
-  EMAIL = 'zakjidr@fit.cvut.cz',
+  EMAIL = 'zakjindr@fit.cvut.cz',
 }
 
 export enum Sizes {

@@ -4,14 +4,15 @@ import {Messages} from '../constants';
 
 export default class MovingItemComponent extends ECSA.Component {
   private horizontalSpeed:number;
-  private verticalSpeed:number;
-  private readonly perioda:number = 500;
-  private verticalChangeIn:number;
+  private verticalSpeed: number;
+  private readonly verticalChangePeriod: number = 800;
+  private verticalChangeIn: number;
 
   constructor(horizontalSpeed:number, verticalSpeed:number = 0) {
     super();
     this.verticalSpeed = -1 * verticalSpeed;
     this.horizontalSpeed = -1 * horizontalSpeed;
+    this.verticalChangeIn = this.verticalChangePeriod;
   }
 
   onInit() {
@@ -32,7 +33,7 @@ export default class MovingItemComponent extends ECSA.Component {
     }
 
     if(this.verticalChangeIn < 0) {
-      this.verticalChangeIn = this.perioda;
+      this.verticalChangeIn = this.verticalChangePeriod;
       this.verticalSpeed *= -1;
     }
 
